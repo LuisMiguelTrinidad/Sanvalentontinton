@@ -1,0 +1,84 @@
+#div1{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 500px;
+}
+
+#div2{
+    display: flex;
+    justify-content: space-around;
+}
+
+#div3{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 500px;
+}
+
+
+#Si{
+    background-color: rgba(56, 209, 56, 0.692);
+    padding: 5px 25px;
+    border-radius: 20px;
+    color: antiquewhite;
+    border: none;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#Si:hover{
+    box-shadow: 5px 5px 5px rgba(145, 247, 115, 0.548);
+    transition-duration: 0.5s;
+    transform: translate(-3px,-5px)
+}
+
+#No{
+    background-color: rgba(255, 57, 57, 0.658);
+    padding: 5px 25px;
+    border-radius: 20px;
+    color: antiquewhite;
+    border: none;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#No:hover{
+    box-shadow: 5px 5px 5px rgba(247, 115, 115, 0.548);
+    transition-duration: 0.5s;
+    transform: translate(-3px,-5px)
+}
+
+body{
+    background-color: rgb(252,252,251)
+}
+
+/* Updated CSS for continuous animation */
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-50px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.heart {
+    width: 20px;
+    height: 20px;
+    background-size: contain; /* Ensure the heart image fits within the div */
+    position: fixed;
+    z-index: 999;
+    animation: floatHeart 2s linear infinite; /* Infinite animation */
+}
